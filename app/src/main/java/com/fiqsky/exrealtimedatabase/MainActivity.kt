@@ -1,5 +1,6 @@
 package com.fiqsky.exrealtimedatabase
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -18,9 +19,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         ref = FirebaseDatabase.getInstance().getReference("USERS")
+        val btnShowData = findViewById<Button>(R.id.showData)
+        btnShowData.setOnClickListener {
+            val intent = Intent (this, ShowActivity::class.java)
+            startActivity(intent)
+        }
 
         val btnSave = findViewById<Button>(R.id.btnSave)
         btnSave.setOnClickListener {
+            val intent = Intent (this, ShowActivity::class.java)
+            startActivity(intent)
             savedata()
         }
     }
