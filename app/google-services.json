@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "123901652929",
+    "project_id": "ex-realtime-database-b9b62",
+    "storage_bucket": "ex-realtime-database-b9b62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123901652929:android:3aab0ae723fe283a3a4940",
+        "android_client_info": {
+          "package_name": "com.fiqsky.exrealtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123901652929-ov3l2i8l5cihnbid6dcid516oqhe63hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9OjBt69mOCffjqULX7UPRe3e_-IqhHPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123901652929-ov3l2i8l5cihnbid6dcid516oqhe63hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
