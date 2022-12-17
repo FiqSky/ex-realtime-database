@@ -19,7 +19,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         ref = FirebaseDatabase.getInstance().getReference("USERS")
+
         val btnShowData = findViewById<Button>(R.id.showData)
+        val showDataRecyclerview = findViewById<Button>(R.id.showDataRecyclerview)
+
+        btnShowData.setOnClickListener {
+            val intent = Intent (this, CheckActivity::class.java)
+            startActivity(intent)
+        }
+
         btnShowData.setOnClickListener {
             val intent = Intent (this, ShowActivity::class.java)
             startActivity(intent)
@@ -37,10 +45,10 @@ class MainActivity : AppCompatActivity() {
         val inputNama = findViewById<EditText>(R.id.inputNama)
         val inputStatus = findViewById<EditText>(R.id.inputStatus)
 
-        val nama = inputNama.text.toString()
-        val status = inputStatus.text.toString()
+        val KodePenyakit = inputNama.text.toString()
+        val NamaPenyakit = inputStatus.text.toString()
 
-        val user = Users(nama,status)
+        val user = Users(KodePenyakit,NamaPenyakit)
         val userId = ref.push().key.toString()
 
         ref.child(userId).setValue(user).addOnCompleteListener {

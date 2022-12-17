@@ -1,6 +1,6 @@
 package com.fiqsky.exrealtimedatabase
 
-class Users (var nama : String, var status: String) {
+class Users (var KodePenyakit : String, var NamaPenyakit: String) {
 
     constructor() : this("", "") {
 
